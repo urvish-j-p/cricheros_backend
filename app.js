@@ -8,8 +8,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// API routes
 app.use('/api/nrr', nrrRoutes);
+
+// Root landing message for browser hits
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', message: 'This is the CricHeroes API' });
+});
 
 // Health check
 app.get('/health', (req, res) => {
