@@ -1,0 +1,23 @@
+{
+  "name": "cricheroes-nrr-calculator-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Backend API for IPL NRR calculator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": ["cricket", "nrr", "ipl"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
+
